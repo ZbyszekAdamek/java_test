@@ -89,11 +89,13 @@ class CreateOrderValidationTest {
 
 
         //when
-        boolean result = productDtos.
-                stream().allMatch(i -> i.getId() != 0);
+        boolean result1 = CreateOrderValidation.validateCreateOrderDto(createOrderDto);
+
+/*        boolean result = productDtos.
+                stream().allMatch(i -> i.getId() != 0);*/
 
         //then
-        assertFalse(result);
+        assertFalse(result1);
     }
 
     @Test
@@ -116,12 +118,13 @@ class CreateOrderValidationTest {
 
 
         //when
-        boolean result = productDtos.
-                stream().allMatch(i -> i.getQuantity() != 0);
+/*        boolean result = productDtos.
+                stream().allMatch(i -> i.getQuantity() != 0);*/
 
+        boolean result1 = CreateOrderValidation.validateCreateOrderDto(createOrderDto);
 
         //then
-        assertFalse(result);
+        assertFalse(result1);
     }
 
     @Test
@@ -143,12 +146,15 @@ class CreateOrderValidationTest {
 
 
         //when
-        boolean result = productDtos.
+
+        boolean result1 = CreateOrderValidation.validateCreateOrderDto(createOrderDto);
+
+/*        boolean result = productDtos.
                 stream().allMatch(i -> i.getQuantity() != 0
-                & i.getId() != 0);
+                & i.getId() != 0);*/
 
 
         //then
-        assertTrue(result);
+        assertTrue(result1);
     }
 }

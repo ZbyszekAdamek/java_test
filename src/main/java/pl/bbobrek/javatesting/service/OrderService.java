@@ -30,11 +30,15 @@ public class OrderService {
 
     /**
      *
-     * Do napisania metoda sprawdzająca zamiane obiektu createOrderDto na obiekt Order.
+     * Do napisania metoda sprawdzająca zamiane obiektu
+     * createOrderDto na obiekt Order.
      * Na co trzeba zwrocic uwage?
      * - bedzie mock orderItemService
-     * - trzeba tak napisać dane testowe do tego przypadku, żeby przetestować też obliczanie totalAmount
-     * - kod do sprawdzenia czy totalAmount policzony jest odpowiedni podanemy assertEquals(0, result.getTotalAmount().compareTo(BigDecimal.valueOf(157.5)));
+     * - trzeba tak napisać dane testowe do tego przypadku,
+     * żeby przetestować też obliczanie totalAmount
+     * - kod do sprawdzenia czy totalAmount
+     * policzony jest odpowiedni podanemy
+     * assertEquals(0, result.getTotalAmount().compareTo(BigDecimal.valueOf(157.5)));
      * tylko zamiast 157.5 podaj swoja liczbe ktora oczekujesz
      *
      * */
